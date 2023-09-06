@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve our platform</i></p>
+    <div>
+    <form id="survey-form">
+      <fieldset>
+      <label for="name-label">Name: <input id="name" name="name" type="text" placeholder="firstname lastname" required/></label>
+
+      <label for="email-label">Email: <input id="email" name="email" type="email" placeholder="example@domain.com" required/></label>
+
+      <label for="number-label">Age<input id="number" name="number" type="number" min="2" max="120" placeholder="**"/></label>
+
+      <label for="dropdown">Which option best describes your current role? 
+      <select id="dropdown">
+        <option disabled>Select Current Role</option>
+        <option value="1">Student</option>
+        <option value="2">Full Time Job</option>
+        <option value="3">Full Time Learner</option>
+        <option value="4">Prefer not to say</option>
+        <option value="5">Other</option>
+      </select>
+      </label>
+
+      <label>Would you recommend freeCodeCamp to a friend?
+      <label for="definitely">
+        <input id="definitely" type="radio" name="recommend" class="recommend" value="definitely">
+        Definitely
+      </label>
+      <label for="maybe">
+        <input id="maybe" type="radio" class="recommend" name="recommend" value="maybe">
+        Maybe
+      </label>
+      <label for="not-sure">
+        <input id="not-sure" type="radio" name="recommend" class="recommend" value="not-sure">
+        Not sure
+      </label>
+      </label>
+      
+      <label for="">What would you like to see improved? (Check all that apply)
+      <label>
+        <input type="checkbox" value="front-end"/>Front-end Projects
+      </label>
+      <label>
+        <input type="checkbox" value="front-end"/>Back-end Projects
+      </label>
+      <label>
+        <input type="checkbox" value="front-end"/>Data Visualization
+      </label>
+      <label>
+        <input type="checkbox" value="front-end"/>Challenges
+      </label>
+      <label>
+        <input type="checkbox" value="front-end"/>Open Source Community
+      </label>
+      <label>
+        <input type="checkbox" value="front-end"/>Gitter help rooms
+      </label>
+      <label>
+        <input type="checkbox" value="front-end"/>
+        Videos
+      </label>
+      <label>
+        <input type="checkbox" value="front-end"/>City Meetups
+      </label>
+      <label>
+        <input type="checkbox" value="front-end"/>Wiki
+      </label>
+      <label>
+        <input type="checkbox" value="front-end"/>Forum
+      </label>
+      <label>
+        <input type="checkbox" value="front-end"/>Additional Courses
+      </label>
+    </label>
+
+      <label>Any comments or suggestions?
+        <textarea cols="43" rows="8" placeholder="Enter your comment here..."></textarea>
+      </label>
+
+      <label>
+        <input type="submit" id="submit" value="Submit"/>
+      </label>
+
+      </fieldset>
+    </form>
+</div>
+  </body>
+</html>
